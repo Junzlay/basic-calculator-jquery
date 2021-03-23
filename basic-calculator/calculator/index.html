@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator(Junmar Layaog)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="calculation-function.js"></script>
+</head>
+<style>
+    .card-header{
+        background-color: rgb(11, 0, 114);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 min-vh-100 d-flex flex-column justify-content-center">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+    
+                    
+                        <div class="card rounded shadow shadow-sm">
+                            <div class="card-header">
+                                <h3 class="mb-0 text-light" id="opTitle">Addition</h3>
+                                  </div>
+                            <div class="card-body">
+                                <form class="form" role="form" autocomplete="off" id="formLogin" >
+                                    <div class="field">
+                                        <input type="text" required  class="holder num1">
+                                        <label title="First Number" data-title="First Number"></label>
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" required  class="holder num2">
+                                        <label title="Second Number" data-title="Second Number"></label>
+                                    </div>
+                                    <div class="field">
+                                        <label>Result</label>
+                                        <input type="text" readonly="readonly" class="form-control form-control-lg rounded-0 result" >
+                                     
+                                    </div>
+                                    <div>
+                                    </div>
+                                   
+                                </form>
+                            </div>
+                         
+
+
+                            <div class="form-check mb-4 ml-4">
+                                <input type="checkbox" class="form-check-input" id="reset">
+                                <label class="form-check-label clear" for="exampleCheck1"><span class="clear"> Clear all field after switching operators (Recommended)</span></label>
+                              </div>
+                            
+
+
+                        </div>
+                       
+                    </div>
+    
+    
+                </div>
+             
+            </div>
+          
+        </div>
+     
+    </div>
+   
+
+
+    <div class="floatingButtonWrap">
+        <div class="floatingButtonInner">
+            <a href="#" class="floatingButton">
+                <i class="fa fa-plus icon-default"></i>
+            </a>
+            <ul class="floatingMenu">
+                <li>
+                    <a href="#" onclick="operation('+');">Addition</a>
+                </li>
+                <li>
+                    <a href="#"  onclick="operation('-');" >Subtraction</a>
+                </li>
+                <li>
+                    <a href="#" onclick="operation('*');">Multiplication</a>
+                </li>
+                <li>
+                    <a href="#" onclick="operation('/');">Division</a>
+                </li>
+              
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+</html>
